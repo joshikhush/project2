@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+}
+#logo{
+    margin: 34px,34px;
+}
+#logo img{
+    height: 87px;
+    margin: 10px, 34px;
+
+}
+#navbar{
+    display: flex;
+    position: relative;
+    align-items: center;
+    top: 0px;
+}
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li{
+    color: white;
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Baloo 2', cursive;
+font-family: 'Baloo Da 2', cursive;
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Baloo 2', cursive;
+font-family: 'Baloo Da 2', cursive;
+    
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url('../pizza-g8b0ef07ac_1280.jpg') no-repeat ;
+    height: 77%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    
+}
+
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+font-family: 'Baloo Da 2', cursive;
+font-family: 'Baloo 2', cursive;
+font-family: 'Baloo Da 2', cursive;
+font-family: 'Bree Serif', serif;
+}
+
+#home h1 {
+    color:white;
+    text-align: center;
+    
+}
+/* services */
+#service{
+margin: 34px;
+display: flex;
+}
+#service .box{
+    border:  3px solid rgb(143, 26, 26);
+    padding: 2px 20px;
+    margin: 3px;
+    border-radius: 10px;
+    background-color: rgb(251, 244, 244);
+}
+#service .box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+
+#service .box p{
+    font-family:'Bree Serif', serif;  
+}
+#service .box::before{
+    content: '';
+    background-color: aliceblue;
+}
+#service{}
+#service{}
+
+/* clients-section */
+
+#client-section{
+    height: 280px;
+
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+     background: url('../bg.jpg');
+     height: 50%;
+     width: 100%;
+     z-index: -1;
+     opacity: 0.3; 
+
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+   height: 120px;
+}
+
+.client-items{
+   padding: 34px;
+ }
+
+ /* contact section */
+ #contact{
+    position: relative;
+ }
+
+ #contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../contact.webp') no-repeat center center/cover;
+ }
+
+ #contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 27px;
+
+ }
+ #contact-box input,
+ #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1;
+ }
+
+ #contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+    
+    
+ }
+/* utility classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.8rem;
+    padding: 1px ;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.7rem;
+    padding: 1px ;
+}
+
+.btn{
+    font-size: 1rem;
+    border: 2px solid rgb(110, 0, 0);
+    border-radius: 5px;
+    background-color:rgba(196, 192, 192, 0.987);
+ padding: 2px 20px;
+ margin: 17px;
+ cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+ 
+footer{
+    background: #000;
+    color: white;
+    padding: 9px  20px;
+}
